@@ -1,0 +1,215 @@
+/* Estilos para el webzine */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+     display: flex;
+     flex-direction: column;
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 28px;
+
+}
+
+/* Suscripciones */
+
+.suscripcion{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.contenido_suscripcion{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    width: 90%;
+    max-width: 400px;
+
+    text-align: center;
+    position: relative;
+}
+
+.suscripcion input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.suscripcion button{
+    background: #ff6b9a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.suscripcion button:hover{
+    background: #ff4c75;
+}
+
+#cerrar{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* Barra de navegación */
+
+.barra{
+      background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu{
+    background: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu a {
+    color: #333;
+
+    text-decoration: none;
+    margin-left: 25px;
+
+    font-weight: 500;
+}
+
+.menu a :hover{
+    color: #ff6b9a;
+
+}
+
+/*contenido principal*/
+
+.encerron{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.imgnoticia img{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.contenido_de_noticias{
+    margin-top: 25px;
+}
+
+.contenido_de_noticias h2{
+    color:#f44d7d;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.fechita{
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contenido_de_noticias p{
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: justify;
+}
+
+.botras{
+    display: inline-block;
+    padding: 10px 18px;
+    background: #f44d7d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+
+/*footer*/
+
+.footer{
+    background: #F57F9E;
+    color: whitesmoke;
+     width: 100%;
+}
+
+.gridfooter{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px 20px;
+}
+
+.cajafoo{
+   text-align: left;
+}
+
+.footer h3, .footer h4{
+    margin-bottom: 10px;
+}
+
+.footer a{
+    display: block;
+    color: #ffd6e0;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.finalfooter{
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 16px;
+  opacity: 0.8;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webzine (Joshua Blanco)</title>
+    <link rel="stylesheet" type= "text/css" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="barra">
+        <div class="logo">
+        <h2 class="titulo">Sweet Sugar</h2>
+        </div>
+
+        <nav class="menu">
+        <a href="webzine.html">Inicio</a>
+        <a href="#noticias">Contenido</a>
+        <a href="#" id="boton_suscripcion">Suscribete</a>
+        <a href="#footer">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes para bienvenida -->
+
+    <section class="slider">
+        <div class="slides">
+
+            <img src="img_postres/11006.jpg" class="slide activa">
+            <img src="img_postres/43300.jpg" class="slide">
+            <img src="img_postres/7897.jpg" class="slide">
+            <img src="img_postres/kerdkanno-ice-cream-5928048_1280.jpg" class="slide">
+            <img src="img_postres/einladung_zum_essen-dessert-1786311_1280.jpg" class="slide">
+
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="slidertextico">
+            <h1>Endulza tu vida</h1>
+        </div>
+
+        <button class="patras">(</button>
+        <button class="palante">)</button>
+
+    </section>
+
+    <!--suscripción-->
+
+    <div class="suscripcion" id="suscripcion">
+        <div class="contenido_suscripcion">
+        <span id="cerrar">&times;</span>
+        <p>¿Quieres ser notificado de nuestros nuevos artículos?</p>
+        <h2>Suscribete</h2>
+        <form id="formulario">
+            <input type="text" placeholder="Ingresa tu nombre" required>
+            <input type="email" placeholder="Ingresa tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+        </div>
+    </div>
+
+
+    <!-- Noticias -->
+   
+    <main class="taper" id="noticias">
+
+        <section class="noti">
+
+        <div class="grid-notis">
+
+        <a href="noticias/noticia_1.html" class="linkcarta">
+        <article class="articulo">
+            <img src="img_postres/images.jpg" alt="postresito">
+            <h2>Lo delicioso de un postre Tres Leches</h2>
+            <p>
+                El postre tres leches es, sin duda, uno de los favoritos en muchas mesas latinoamericanas. 
+                Su textura suave, su sabor dulce y su inconfundible humedad lo convierten en...</p>
+        </article>
+        </a>
+
+        <a href="noticias/noticia_2.html" class="linkcarta">
+        <article class="articulo">
+            <img src="img_postres/43300.jpg" alt="postresito">
+            <h2>Les presento a mi nuevo amigo: el tiramisú</h2>
+            <p>Hay postres que simplemente se comen… y hay otros que se convierten en compañeros fieles. 
+                El tiramisú definitivamente pertenece a la segunda categoría. </p>
+        </article>
+        </a>
+
+         <a href="noticias/noticia_3.html" class="linkcarta">
+        <article class="articulo">
+            <img src="img_postres/11006.jpg" alt="postresito">
+            <h2>Fresas con crema en tan pocos minutos</h2>
+            <p>Hay días en los que uno quiere algo dulce, pero sin complicarse la vida. Para esos momentos, las fresas con crema son la solución perfecta. Este postre sencillo, fresco y lleno de color demuestra que...</p>
+        </article>
+        </a>
+
+        <a href="noticias/noticia_4.html" class="linkcarta">
+        <article class="articulo">
+            <img src="img_postres/7897.jpg" alt="postresito">
+            <h2>Azucar, ¿un bien o un mal?</h2>
+            <p>El azúcar ha sido durante siglos uno de los ingredientes más valorados en la cocina. 
+                No solo aporta dulzura, sino que también cumple funciones importantes en la repostería, la conservación de alimentos y la creación de texturas...</p>
+        </article>
+        </a>
+
+       </div>
+
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer" id="footer">
+        <div class="gridfooter">
+
+            <div class="cajafoo">
+                <h3>Sweet Sugar</h3>
+                <p>Endulza tu vida</p>
+            </div>
+
+            <div class="cajafoo">
+                <h4>Secciones</h4>
+                <a href="webzine.html">Inicio</a>
+                <a href="#noticias">Contenido</a>
+                <a href="#" id="boton_suscripcion">Suscribete</a>
+                <a href="#footer">Contacto</a>
+            </div>
+
+            <div class="cajafoo">
+                <h4>Contáctanos</h4>
+                <a href="https://www.instagram.com/joshwhite856?igsh=ZWJyMDd5bng5MGtt">Instagram</a>
+                <a href="https://www.tiktok.com/@joshuabym8562?_r=1&_t=ZS-93zABzc7yzN">Tiktok</a>
+                <a href="https://youtube.com/@joshuablanco-b7y?si=EfHMUFPEe5VE9jNi">Youtube</a>
+            </div>
+
+            <div class="cajafoo">
+                <h4>Contacto</h4>
+                <p>Sweet Sugar</p>
+                <p>+57 304 243 7615</p>
+            </div>                
+        </div>
+
+        <div class="finalfooter">
+            <p>2026-Sweet Sugar</p>
+        </div>
+    </footer>
+    <script src="js/slider.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+/* Estilos para el webzine */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+     display: flex;
+     flex-direction: column;
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 28px;
+
+}
+
+/* Suscripciones */
+
+.suscripcion{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.contenido_suscripcion{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    width: 90%;
+    max-width: 400px;
+
+    text-align: center;
+    position: relative;
+}
+
+.suscripcion input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.suscripcion button{
+    background: #ff6b9a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.suscripcion button:hover{
+    background: #ff4c75;
+}
+
+#cerrar{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Barra de navegación */
+
+.barra{
+      background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu{
+    background: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu a {
+    color: #333;
+
+    text-decoration: none;
+    margin-left: 25px;
+
+    font-weight: 500;
+}
+
+.menu a :hover{
+    color: #ff6b9a;
+
+}
+
+/* Carrusel de imágenes */
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 100%; 
+    position: relative; 
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+
+.slide.activa{
+    opacity: 1;
+}
+
+
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+
+    z-index: 2;
+
+}
+
+.slidertextico{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+    z-index: 3;
+}
+
+.patras, .palante{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 4;
+}
+.patras{
+    left: 20px;
+}
+
+.palante{
+    right: 20px;
+}
+
+/* Sección de artículos */
+
+main{
+    max-width: 800px;
+    margin: auto;
+    padding:20px;
+    flex: 1;
+}
+
+.taper{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.articulo{
+     background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.articulo h2, .articulo p{
+    padding: 5px 15px;
+}
+
+.articulo:hover{
+    transform: translateY(-5px);
+}
+
+.articulo img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.noti{
+    padding: 40px 20px;
+}
+
+.grid-notis{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.linkcarta{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/*footer*/
+
+.footer{
+    background: #F57F9E;
+    color: whitesmoke;
+     width: 100%;
+}
+
+.gridfooter{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px 20px;
+}
+
+.cajafoo{
+   text-align: left;
+}
+
+.footer h3, .footer h4{
+    margin-bottom: 10px;
+}
+
+.footer a{
+    display: block;
+    color: #ffd6e0;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.finalfooter{
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 16px;
+  opacity: 0.8;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
