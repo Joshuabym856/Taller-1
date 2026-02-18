@@ -11,6 +11,11 @@ Sweet Sugar es una web digital enfocada en el mundo de la reposteria. Incluyendo
 - Utilizar JavaScript para añadir interactividad (como el formulario de suscripción y el carrusel de imágenes).
 - Emplear etiquetas semánticas como article, section, time y figure para mejorar la estructura del contenido.
 
+- HTML → Estructura del sitio.
+- CSS → Diseño, layout y estilos.
+- JavaScript → Funcionalidad dinámica (modal de suscripción, alertas, etc.).
+- Google Fonts → Tipografías personalizadas, en este caso particular 'montserrat, sans-serif'.
+
 
 ## Funcionalidades principales
 
