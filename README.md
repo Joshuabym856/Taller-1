@@ -13,10 +13,10 @@ Sweet Sugar es una webzine enfocada en el mundo de la reposteria. Incluyendo arc
 
 ## Herramientas utilizadas
 
-- HTML → Estructura del sitio.
-- CSS → Diseño, layout y estilos.
-- JavaScript → Funcionalidad dinámica (modal de suscripción, alertas, etc.).
-- Google Fonts → Tipografías personalizadas, en este caso particular 'montserrat, sans-serif'.
+- HTML: Estructura del webzine.
+- CSS:  Diseño, layout, flexbox y estilos.
+- JavaScript:  Funcionalidad dinámica (formulario de suscripción y alertas).
+- Google Fonts: Tipografías personalizadas, en este caso particular 'montserrat, sans-serif'.
 
 
 ## Funcionalidades principales
