@@ -1,6 +1,6 @@
 # Taller-1
 
-Sweet Sugar es una web digital enfocada en el mundo de la reposteria. Incluyendo archivos informativos, recetas practicas y contenido de opinión, teniendo como principal proposito brindar una experiencia visual atractiva y agradablepara los usuarios.
+Sweet Sugar es una webzine enfocada en el mundo de la reposteria. Incluyendo archivos informativos, recetas practicas y contenido de opinión, teniendo como principal proposito brindar una experiencia visual atractiva y agradablepara los usuarios.
 
 
 ## Objetivos:
